@@ -48,7 +48,7 @@ namespace MvcCoreApiPeliculasAWS7.Services
         public async Task<List<Pelicula>> 
             GetPeliculasActoresAsync(string actor)
         {
-            string request = "api/peliculas/find/" + actor;
+            string request = "api/peliculas/peliculasactor/" + actor;
             List<Pelicula> data =
                 await this.CallApiAsync<List<Pelicula>>(request);
             return data;
